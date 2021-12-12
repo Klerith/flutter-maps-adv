@@ -30,7 +30,7 @@ class BtnCurrentLocation extends StatelessWidget {
                 final snack = CustomSnackbar( message: 'No hay ubicación' );
                 ScaffoldMessenger.of(context).showSnackBar(snack);
                 return;
-            };
+            }
             
 
             mapBloc.moveCamera(userLocation);
