@@ -4,6 +4,7 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 import 'package:maps_app/blocs/blocs.dart';
 import 'package:maps_app/views/views.dart';
+
 import 'package:maps_app/widgets/btn_toggle_user_route.dart';
 import 'package:maps_app/widgets/widgets.dart';
 
@@ -58,7 +59,8 @@ class _MapScreenState extends State<MapScreen> {
                       polylines: polylines.values.toSet(),
                     ),
 
-                    // TODO: botones...
+                    const SearchBar(),
+                    const ManualMarker(),
                   ],
                 ),
               );
