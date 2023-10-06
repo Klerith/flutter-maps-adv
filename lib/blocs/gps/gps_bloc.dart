@@ -76,6 +76,9 @@ class GpsBloc extends Bloc<GpsEvent, GpsState> {
       case PermissionStatus.permanentlyDenied:
         add( GpsAndPermissionEvent(isGpsEnabled: state.isGpsEnabled, isGpsPermissionGranted: false) );
         openAppSettings();
+
+      default:
+        throw UnimplementedError();
     }
 
   }
